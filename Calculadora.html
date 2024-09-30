@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>HealthFuel</title>
+</head>
+
+<body>
+  
+  <div class="header">
+    <!--Navbar-->
+    <nav class="navbar navbar-dark" style="background-color: rgb(39, 102, 68);">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo-modified.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      HealthFuel
+      <nav class="navbar navbar-expand-lg" style="background-color: rgb(39, 102, 68);">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Nuestras Propuestas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Nutricion.html">Nutrición</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Ejercicio.html">Ejercicio</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Salud-bienestar.html">Salud mental y bienestar</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Calculadora</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </a>
+  </nav>
+  </div>
+  <section id="inicio">
+    <h1>Calculadora de comidas</h1>
+    <p>Conoce el valor nutricional de lo que vas a ingerir.</p>
+
+    <div class="calculator">
+        <h2>Ingresa los alimentos</h2>
+        <form id="mealForm">
+            <div>
+                <label for="food">Nombre del alimento:</label>
+                <input type="text" id="food" required>
+            </div>
+            <div>
+                <label for="calories">Calorías:</label>
+                <input type="number" id="calories" required>
+            </div>
+            <div>
+                <label for="carbs">Carbohidratos (g):</label>
+                <input type="number" id="carbs" required>
+            </div>
+            <div>
+                <label for="proteins">Proteínas (g):</label>
+                <input type="number" id="proteins" required>
+            </div>
+            <div>
+                <label for="fats">Grasas (g):</label>
+                <input type="number" id="fats" required>
+            </div>
+            <button type="submit">Agregar alimento</button>
+        </form>
+
+        <h2>Totales</h2>
+        <div id="totals">
+            <p>Calorías totales: <span id="totalCalories">0</span></p>
+            <p>Carbohidratos totales: <span id="totalCarbs">0</span>g</p>
+            <p>Proteínas totales: <span id="totalProteins">0</span>g</p>
+            <p>Grasas totales: <span id="totalFats">0</span>g</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
