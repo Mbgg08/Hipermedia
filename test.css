@@ -1,0 +1,87 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li:hover > a {
+    background-color: #45a049;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown li {
+    width: 100%;
+}
+
+nav ul li .dropdown li a {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul li .dropdown li a:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para las secciones */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+}
