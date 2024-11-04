@@ -7,6 +7,7 @@ footer{
 	padding: 20px;
 	background: #000;
 	color: #fff;
+	text-align: center;
 }
 
 .pie-pagina .grupo-1 .box figure img{
@@ -97,6 +98,7 @@ color: #fff;
 }
 .dropdown-item{
 	font-weight: 1000;
+	align-items: center;
 }
 
 /*#4CAF50;
